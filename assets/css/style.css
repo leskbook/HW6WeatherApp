@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("../images/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Asap Condensed', serif;
+}
+
+.jumbotron {
+    background-image: url("../images/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Asap Condensed', serif;
+    color: black;
+    font-size: large;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+#current-weather {
+    padding-left: 5%;
+}
+
+#current-city {
+    font-family: 'Asap Condensed', serif;
+    font-size: 25px;
+}
+
+#wind-speed {
+    font-family: 'Asap Condensed', serif;
+    border: 1px solid blue;
+}
+
+#humidity {
+    font-family: 'Asap Condensed', serif;
+    border: 1px solid blue;
+}
+
+#temperature {
+    font-family: 'Asap Condensed', serif;
+    border: 1px solid blue;
+}
+
+h1 {
+    font-family: 'Asap Condensed', serif;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+}
+
+h3 {
+    font-family: 'Asap Condensed', serif;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.forecast {
+    font-size: 0.9em;
+}
+
+span {
+    font-size: 1em;
+}
+
+li:hover {
+    background-color: lightslategray;
+    text-decoration: underline;
+}
