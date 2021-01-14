@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather Dashboard</title>
-    <!--Bootstrap CSS CDN-->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" integrity="sha512-Fdq8QvrEd3TD4heN8gNTOl79sAZR7zsiHIDQbE5eEBxx8pPfb/yJHaBWxhoG7SNcQiBmrrUHlg5TiNX4ovt6Jg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -23,20 +20,19 @@
         <h1>Weather Dashboard</h1>
     </div>
     <div class="container">
-        <!--Row for searching a city-->
+
         <div class="row">
             <div class="col-sm-4 bg-light">
-                <!--Here we create an HTML form for handling the inputs-->
                 <h4 class="pt-1">Search for a city:</h4>
-                <!--Here we create the text box for capturing the search city Name-->
+
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="search-city" aria-label="City Search" aria-describedby="search-button">
+                    <input type="text" class="form-control" id="findcity" aria-label="City Search" aria-describedby="search-button">
                     <div class="input-group-append">
                         <button class=" btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
-                <!--section for search city history-->
-                <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+
+                <button class=" btn btn-primary" type="button" id="clearhistory">Clear history</button>
                 <ul class="list-group">
 
                 </ul>
@@ -47,39 +43,38 @@
                         <h2 class="city-name mb-1 mt-2" id="current-city"></h2>
                         <p>Temperature: <span class="current" id="temperature"></span></p>
                         <p>Humidity: <span class="current" id="humidity"></span></p>
-                        <p>Wind Speed: <span class="current" id="wind-speed"></span></p>
-                        <p>UV index: <span class="current rounded py-2 px-2 text-white" id="uv-index"></span></p>
+                        <p>Wind Speed: <span class="current" id="windspeed"></span></p>
+                        <p>UV index: <span class="current rounded py-2 px-2 text-white" id="uvindex"></span></p>
                     </div>
                 </div>
-                <!--Row for future data to be dumped here-->
                 <div class="col-sm-12" id="future-weather">
                     <h3>5-Day Forecast:</h3>
                     <div class="row text-light">
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
                             <p id="fDate0"></p>
                             <p id="fImg0"></p>
                             <p>Temp:<span id="fTemp0"></span></p>
                             <p>Humidity:<span id="fHumidity0"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
                             <p id="fDate1"></p>
                             <p id="fImg1"></p>
                             <p>Temp:<span id="fTemp1"></span></p>
                             <p>Humidity:<span id="fHumidity1"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
                             <p id="fDate2"></p>
                             <p id="fImg2"></p>
                             <p>Temp:<span id="fTemp2"></span></p>
                             <p>Humidity:<span id="fHumidity2"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
                             <p id="fDate3"></p>
                             <p id="fImg3"></p>
                             <p>Temp:<span id="fTemp3"></span></p>
                             <p>Humidity:<span id="fHumidity3"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2">
                             <p id="fDate4"></p>
                             <p id="fImg4"></p>
                             <p>Temp:<span id="fTemp4"></span></p>
@@ -92,10 +87,9 @@
         </div>
     </div>
 
-    <!--jQuery JS-->
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <!--Code to Jvascript File-->
     <script src="assets/scripts/script.js"></script>
 </body>
 

@@ -1,14 +1,14 @@
 //Declare a variable to store the searched city
 var city = "";
 // variable declaration
-var searchCity = $("#search-city");
+var searchCity = $("#findcity");
 var searchButton = $("#search-button");
-var clearButton = $("#clear-history");
+var clearButton = $("#clearhistory");
 var currentCity = $("#current-city");
 var currentTemperature = $("#temperature");
 var currentHumidty = $("#humidity");
-var currentWSpeed = $("#wind-speed");
-var currentUvindex = $("#uv-index");
+var currentWSpeed = $("#windspeed");
+var currentUvindex = $("#uvindex");
 var sCity = [];
 
 //Search for city 
@@ -59,17 +59,17 @@ function currentWeather(city) {
         UVIndex(response.coord.lon, response.coord.lat);
         forecast(response.id);
         if (response.cod == 200) {
-            sCity = JSON.parse(localStorage.getItem("cityname "));
+            sCity = JSON.parse(localStorage.getItem("cityname"));
             console.log(sCity);
             if (sCity == null) {
                 sCity = [];
                 sCity.push(city.toUpperCase());
-                localStorage.setItem("cityname ", JSON.stringify(sCity));
+                localStorage.setItem("cityname", JSON.stringify(sCity));
                 addToList(city);
             } else {
                 if (find(city) > 0) {
                     sCity.push(city.toUpperCase());
-                    localStorage.setItem("cityname ", JSON.stringify(sCity));
+                    localStorage.setItem("cityname", JSON.stringify(sCity));
                     addToList(city);
                 }
             }
@@ -164,4 +164,4 @@ function clearHistory(event) {
 $("#search-button").on("click", displayWeather);
 $(document).on("click", invokePastSearch);
 $(window).on("load", loadlastCity);
-$("#clear-history").on("click", clearHistory);
+$("#clearhistory").on("click", clearHistory);

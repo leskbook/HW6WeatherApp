@@ -21,8 +21,15 @@
     border: 1px solid blue;
 }
 
+.col-sm-8 {
+    border: 1px solid blue;
+    padding-left: 0%;
+    padding-right: 15px;
+}
+
 #current-weather {
     padding-left: 5%;
+    border: none;
 }
 
 #current-city {
