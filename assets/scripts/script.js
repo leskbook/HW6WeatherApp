@@ -1,6 +1,4 @@
-//Declare a variable to store the searched city
 var city = "";
-// variable declaration
 var searchCity = $("#findcity");
 var searchButton = $("#search-button");
 var clearButton = $("#clearhistory");
@@ -11,7 +9,7 @@ var currentWSpeed = $("#windspeed");
 var currentUvindex = $("#uvindex");
 var sCity = [];
 
-//Search for city 
+
 function find(c) {
     for (var i = 0; i < sCity.length; i++) {
         if (c.toUpperCase() === sCity[i]) {
@@ -51,10 +49,10 @@ function currentWeather(city) {
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         $(currentTemperature).html((tempF).toFixed(2) + "&#8457");
 
-        $(currentHumidty).html(response.main.humidity + "% ");
+        $(currentHumidty).html(response.main.humidity + "%");
         var ws = response.wind.speed;
         var windsmph = (ws * 2.237).toFixed(1);
-        $(currentWSpeed).html(windsmph + "MPH ");
+        $(currentWSpeed).html(windsmph + "MPH");
 
         UVIndex(response.coord.lon, response.coord.lat);
         forecast(response.id);
@@ -79,24 +77,30 @@ function currentWeather(city) {
 }
 
 function UVIndex(ln, lt) {
-
     var uvqURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lt + "&lon=" + ln;
     $.ajax({
         url: uvqURL,
         method: "GET"
+
     }).then(function(response) {
         $(currentUvindex).html(response.value);
+        if (response.value < 3) {
+            uvColor = "green";
+            $(currentUvindex).addClass("uvig");
+
+        } else if (response.value > 7) {
+            uvColor = "red";
+            $(currentUvindex).addClass("uvir");
+
+        } else {
+            uvColor = "yellow";
+            $(response.value).addClass("uviy");
+        }
+
     });
 
-    if (UVIndex < 3) {
-        uvColor = "green";
-    } else if (UVIndex > 7) {
-        uvColor = "red";
-    } else {
-        uvColor = "yellow";
-    }
-}
 
+}
 
 function forecast(cityid) {
     var dayover = false;

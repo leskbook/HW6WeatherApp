@@ -22,12 +22,16 @@
 }
 
 .col-sm-8 {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding-left: 0%;
     padding-right: 15px;
 }
 
-#current-weather {
+.col-sm-12 {
+    border: none;
+}
+
+.current-weather {
     padding-left: 5%;
     border: none;
 }
@@ -37,19 +41,55 @@
     font-size: 25px;
 }
 
-#wind-speed {
+#windspeed {
     font-family: 'Asap Condensed', serif;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+
+.uvir {
+    color: white;
+    background-color: red;
+    font-size: smaller;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 5px;
+    height: 2px;
+}
+
+.uviy {
+    color: black;
+    background-color: yellow;
+    font-size: smaller;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 5px;
+    height: 2px;
+}
+
+.uvig {
+    color: white;
+    background-color: green;
+    font-size: smaller;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 5px;
+    height: 2px;
 }
 
 #humidity {
     font-family: 'Asap Condensed', serif;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 #temperature {
     font-family: 'Asap Condensed', serif;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 h1 {
@@ -62,6 +102,15 @@ h3 {
     font-family: 'Asap Condensed', serif;
     font-size: 20px;
     margin-top: 8px;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+}
+
+h5 {
+    font-family: 'Asap Condensed', serif;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+    font-size: 45px;
 }
 
 .forecast {
@@ -70,6 +119,7 @@ h3 {
 
 span {
     font-size: 1em;
+    color: black;
 }
 
 li:hover {
