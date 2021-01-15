@@ -85,16 +85,16 @@ function UVIndex(ln, lt) {
     }).then(function(response) {
         $(currentUvindex).html(response.value);
         if (response.value < 3) {
-            uvColor = "green";
+            // uvColor = "purple";
             $(currentUvindex).addClass("uvig");
 
-        } else if (response.value > 7) {
-            uvColor = "red";
+        } else if (response.value >= 7) {
+            // style.color = "yellow";
+            $(currentUvindex).addClass("uviy");
+        } else {
+            // uvColor = "red";
             $(currentUvindex).addClass("uvir");
 
-        } else {
-            uvColor = "yellow";
-            $(response.value).addClass("uviy");
         }
 
     });
