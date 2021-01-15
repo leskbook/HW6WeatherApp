@@ -1,5 +1,9 @@
 # HW6WeatherApp
-Daily Workday Planner
+
+Weather Dashboard
+
+- Link to site:
+https://leskbook.github.io/HW6WeatherApp/
 
 
 
