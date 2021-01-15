@@ -1,6 +1,8 @@
 # HW6WeatherApp
 Daily Workday Planner
 
+
+
 **Assignment Objective:**
 
 Using a combination of HTML, CSS, javascript and API this task is meant to present a user with an interactive weather dashboard. The user is presented with an option to search for a city. That search will return the city and display the current weather and a five day forcast for that city. The city is recorded in local storage and a list of cities will populate, allowing the user to click from city to city. The uvi will also be displayed dynamically depending on a preset function. There is also an option to clear the local storage, removing the historical weather.
