@@ -85,6 +85,7 @@ function UVIndex(ln, lt) {
     }).then(function(response) {
         $(currentUvindex).html(response.value);
         if (response.value < 3) {
+<<<<<<< HEAD
             // uvColor = "purple";
             $(currentUvindex).addClass("uvig");
 
@@ -95,6 +96,18 @@ function UVIndex(ln, lt) {
             // uvColor = "red";
             $(currentUvindex).addClass("uvir");
 
+=======
+            //uvColor = "green";
+            $(currentUvindex).addClass("uvig");
+
+        } else if (response.value >= 7) {
+            //uvColor = "red";
+            $(currentUvindex).addClass("uvir");
+
+        } else {
+            //uvColor = "yellow";
+            $(currentUvindex).addClass("uviy");
+>>>>>>> 0e402966fbceceafc6b5fa6945c96b7789170d9d
         }
 
     });
