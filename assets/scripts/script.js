@@ -85,7 +85,7 @@ function UVIndex(ln, lt) {
     }).then(function(response) {
         $(currentUvindex).html(response.value);
         if (response.value < 3) {
-<<<<<<< HEAD
+
             // uvColor = "purple";
             $(currentUvindex).addClass("uvig");
 
@@ -96,7 +96,7 @@ function UVIndex(ln, lt) {
             // uvColor = "red";
             $(currentUvindex).addClass("uvir");
 
-=======
+
             //uvColor = "green";
             $(currentUvindex).addClass("uvig");
 
