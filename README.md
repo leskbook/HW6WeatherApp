@@ -25,7 +25,7 @@ Using a combination of HTML, CSS, javascript and API this task is meant to prese
 **Code Snippet**
  - Search option
 
-<img src="assets/images/searchsave.png" alt="Java script code demonstrating the search city with a highlighted uvi">
+<img src="assets/images/search.png" alt="Java script code demonstrating the search city with a highlighted uvi">
  
 
 - The city search is saved to local storage so the user can click between cities retaining weather history
