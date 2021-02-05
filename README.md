@@ -1,5 +1,5 @@
 # HW6WeatherApp
-Daily Workday Planner - Deployed Application "https://leskbook.github.io/HW6WeatherApp/"
+5 Day Weather Forcast - Deployed Application "https://leskbook.github.io/HW6WeatherApp/"
 
 **Assignment Objective:**
 
